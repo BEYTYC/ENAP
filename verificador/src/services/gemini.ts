@@ -23,7 +23,7 @@ export interface AnalysisResponse {
 
 export async function analyzeGraduationDocuments(pdfBase64: string): Promise<AnalysisResponse> {
   const model = ai.models.generateContent({
-    model: "gemini-flash-latest",
+    model: "gemini-1.5-flash"
     contents: [
       {
         role: "user",
