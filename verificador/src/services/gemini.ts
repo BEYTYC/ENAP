@@ -4,7 +4,7 @@ const apiKey = import.meta.env.VITE_GEMINI_API_KEY;
 if (!apiKey) {
   console.error("GEMINI_API_KEY is missing from environment variables.");
 }
-const ai = new GoogleGenAI({ apiKey: apiKey || "" });
+const genAI = new GoogleGenerativeAI(apiKey);
 
 export interface VerificationResult {
   item: string;
