@@ -180,7 +180,7 @@ export default function App() {
             title="Validación de Soportes de Grado"
             description="Validación integral de requisitos y documentación para procesos de graduación."
             icon={<GraduationCap />}
-            link="https://verificadorenap.vercel.app/"
+            link="https://verificadorgrado.vercel.app/"
           />
         </div>
 
