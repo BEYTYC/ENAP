@@ -2,9 +2,9 @@ import { GoogleGenAI, Type } from "@google/genai";
 
 const apiKey = import.meta.env.VITE_GEMINI_API_KEY;
 if (!apiKey) {
-  console.error("GEMINI_API_KEY is missing from environment variables.");
+  console.error("La API Key no se detectó. Revisa las variables en Vercel.");
 }
-const ai = new GoogleGenAI({ apiKey: apiKey || "" });
+const genAI = new GoogleGenerativeAI(apiKey || "");
 
 export interface VerificationResult {
   item: string;
