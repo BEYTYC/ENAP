@@ -28,7 +28,7 @@ export interface AnalysisResponse {
 export async function analyzeGraduationDocuments(pdfBase64: string): Promise<AnalysisResponse> {
   // Usamos genAI (que es la variable definida arriba) y el modelo flash
   const model = genAI.getGenerativeModel({
-    model: "gemini-1.5-flash",
+    model: "gemini-1.5-flash-latest", // O prueba con "gemini-1.5-flash-001"
     generationConfig: {
       responseMimeType: "application/json",
       responseSchema: {
